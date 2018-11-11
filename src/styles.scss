@@ -20,7 +20,7 @@ body { margin: 0; background-color: #000; font-size: 2rem; text-align: center; f
 }
 .next { font-size: 3rem; text-transform: uppercase; font-weight: 300; z-index: 10; }
 .next, .next:focus, .next:active { outline: none; background-color: transparent; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-.next svg { display: block; width: 50px; height: 50px; margin: 0 auto; opacity: 0; }
+.next svg { display: block; width: 50px !important; height: 50px !important; margin: 0 auto; opacity: 0; }
 .in-view .next svg, .top .next svg { 
     animation-name: clickNext, appear; 
     animation-duration: 1.5s, 1s;
@@ -360,10 +360,10 @@ a { text-decoration: none; color: #fff; }
 	.creation-title.men { top: 60vh; }
 
 	.ico { position: absolute; width: 250px; height: 250px; max-width: 40vw; max-height: 30vw; }
-	.ico-dog { left: 30px; top: 50px; }
-	.ico-cat { right: 30px; top: 30vh; }
+	.ico-dog { left: 30px; top: 10px; }
+	.ico-cat { right: 30px; top: 25vh; }
 	.ico-snake { left: 30px; top: 50vh; }
-	.ico-couple { right: 30px; bottom: 110vh; }
+	.ico-couple { right: 30px; bottom: 100vh; }
 
 	@media screen and (min-width: 992px) {
 		.creation-title { font-size: 10rem; }
