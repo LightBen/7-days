@@ -36,3 +36,23 @@ for (let item of anchorlinks) { // relitere
         e.preventDefault()
     })
 }
+
+
+
+const section = document.querySelectorAll('.main-section');
+const sectionTop = document.querySelector('#top');
+const sectionVisible = document.querySelectorAll('.main-section.in-view');
+const checkElemsIn = document.querySelectorAll('.check-elem-in');
+const checkElemsOut = document.querySelectorAll('.check-elem-out');
+const backToBeginningLink = document.querySelector('#backToBeginning');
+
+window.onscroll = function() {
+  for (const checkElemIn of checkElemsIn) {
+    if (checkElemIn.getBoundingClientRect().top <= window.innerHeight * 0.75 && checkElemIn.getBoundingClientRect().top > 0) {
+      checkElemIn.classList.add('in-view');
+    }
+    if (sectionTop.getBoundingClientRect().top == 0) {
+      checkElemIn.classList.remove('in-view');
+    }
+  }
+};

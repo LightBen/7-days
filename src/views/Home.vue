@@ -208,7 +208,7 @@
                 <a class="prev" href="#dayShabat" title="Back to Day 7">
                     <i></i>
                 </a>
-                <a class="next" href="#top" title="Back to the top">
+                <a class="next" href="#top" title="Back to the top" id="backToBeginning">
                     <svg class="ico ico-click">
                         <use xlink:href="#ico-click" href="#ico-click"></use>
                     </svg>
@@ -219,7 +219,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+// @ is an alias to /src 
 // import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {

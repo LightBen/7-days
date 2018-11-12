@@ -1,6 +1,9 @@
 {
   "name": "7 Days",
   "short_name": "7 Days",
+  "display": "standalone",
+  "background_color": "#2F80ED",
+  "theme_color": "#2F80ED",
   "icons": [
     {
       "src": "/img/icons/homescreen48.png",
@@ -32,8 +35,5 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000"
+  "start_url": "./index.html"
 }
