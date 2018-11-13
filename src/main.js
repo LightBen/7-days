@@ -39,12 +39,12 @@ for (let item of anchorlinks) { // relitere
 
 
 
-const section = document.querySelectorAll('.main-section');
 const sectionTop = document.querySelector('#top');
-const sectionVisible = document.querySelectorAll('.main-section.in-view');
 const checkElemsIn = document.querySelectorAll('.check-elem-in');
-const checkElemsOut = document.querySelectorAll('.check-elem-out');
-const backToBeginningLink = document.querySelector('#backToBeginning');
+// const section = document.querySelectorAll('.main-section');
+// const sectionVisible = document.querySelectorAll('.main-section.in-view');
+// const checkElemsOut = document.querySelectorAll('.check-elem-out');
+// const backToBeginningLink = document.querySelector('#backToBeginning');
 
 window.onscroll = function() {
   for (const checkElemIn of checkElemsIn) {

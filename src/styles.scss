@@ -14,7 +14,7 @@ body { margin: 0; background-color: #000; font-size: 2rem; text-align: center; f
     animation-timing-function: ease-out;
     animation-delay: .3s;
 }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
     .h1 { font-size: 10rem; }
     .h1 span { letter-spacing: -25px; }
 }
@@ -78,7 +78,7 @@ a { text-decoration: none; color: #fff; }
 */
 
 
-.day-title { opacity: 0; margin-top: 3rem; font-size: 4rem; }
+.day-title { opacity: 0; margin-top: 3rem; font-size: 4rem; text-transform: uppercase; }
 .in-view .day-title {
 	opacity: 0;
 	animation-name: appearTitle; 
@@ -89,7 +89,7 @@ a { text-decoration: none; color: #fff; }
 	animation-timing-function: ease-in-out;
 }
 .day .next svg { opacity: 0; }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
     .day-title { font-size: 6rem; }
     .creation-title { font-size: 5rem; }
 }
@@ -170,7 +170,7 @@ a { text-decoration: none; color: #fff; }
 	animation-duration: 3s;
 }
 .in-view .creation-title.sky { animation-name: appearDay2Title; }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	#day2 .creation-title.sky { top: 30vh; font-size: 30rem; }
 }
 #day2 .ico { position: absolute; display: block; }
@@ -197,12 +197,12 @@ a { text-decoration: none; color: #fff; }
 	animation-direction: reverse;
 	animation-delay: 2s;
 }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	.ico-clouds { height: 250px; }
 	.ico-cloud1 { height: 150px; }
 	.ico-cloud2 { height: 200px; }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
 	.ico-clouds, .ico-cloud1, .ico-cloud2 { animation-duration: 15s; }
 }
 #day2 .creation-title.sky { animation-delay: 2s; }
@@ -229,16 +229,16 @@ a { text-decoration: none; color: #fff; }
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) {
 	.creation-title.land { top: 27vh; font-size: 8rem; }
 }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	.creation-title.land { top: 27vh; font-size: 20rem; }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
 	.creation-title.land { top: 20vh; font-size: 30rem; }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
 	.creation-title.land { top: 13vh; font-size: 40rem; }
 }
 .in-view .earth-container { animation-delay: 2s; }
@@ -250,25 +250,25 @@ a { text-decoration: none; color: #fff; }
 /* DAY 4 */
 .creation-title.sun, .creation-title.moon, .creation-title.stars { position: absolute; font-size: 5rem; opacity: 0; width: 100%; left: 0; }
 .in-view .creation-title.sun, .in-view .creation-title.moon, .in-view .creation-title.stars { animation-name: appearDay4Title; animation-duration: 3s; }
-.creation-title.moon { top: 40vh; }
+.creation-title.moon { top: 33vh; }
 .creation-title.stars { top: 50vh; }
-.creation-title.sun { top: 60vh; }
+.creation-title.sun { top: 67vh; }
 
 #day4 .ico { position: absolute; display: block; }
 .ico-sun, .ico-moon { width: 100%; height: 100%; max-height: 150px; max-width: 150px; opacity: 0; }
 .ico-sun { bottom: calc(100vh + 50px); left: 30px; }
 .ico-moon { top: 50px; right: 30px; }
 
-@media screen and (min-width: 320px) {
+@media (min-width: 320px) {
 	.ico-sun, .ico-moon { max-height: 150px; max-width: 150px; }
 }
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
 	.ico-sun, .ico-moon { max-height: 200px; max-width: 200px; }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 	.ico-sun, .ico-moon { max-height: 250px; max-width: 250px; }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
 	.ico-sun, .ico-moon { max-height: 300px; max-width: 300px; }
 	.creation-title.sun, .creation-title.moon, .creation-title.stars { font-size: 10rem; }
 	.creation-title.moon { top: 35vh; }
@@ -294,7 +294,7 @@ a { text-decoration: none; color: #fff; }
 .in-view .creation-title.sun { animation-delay: 7s; }
 .in-view .creation-title.moon { animation-delay: 7.5s; }
 .in-view .creation-title.stars { animation-delay: 8s; }
-#day4 .next svg { animation-delay: 9s; }
+#day4 .next svg { animation-delay: 11s; }
 /* END DAY 4 */
 
 /* DAY 5 */
@@ -367,48 +367,78 @@ a { text-decoration: none; color: #fff; }
 	.ico-snake { left: 30px; top: 50vh; }
 	.ico-couple { right: 30px; bottom: 100vh; }
 
-	@media screen and (min-width: 992px) {
+	@media (min-width: 992px) {
 		.creation-title { font-size: 10rem; }
 		.creation-title.animals { top: 20vh; }
 		.creation-title.men { top: 60vh }
 	}
 }
-.in-view .ico-dog { animation-name: appear, moveBalanceSym; }
-.in-view .ico-cat { animation-name: appear, moveBalance; }
-.in-view .ico-snake { animation-name: appearSnake, moveBalance; }
-.in-view .ico-couple { animation-name: appear, coupleBounce; }
+#day6.in-view {
+	.ico-dog { animation-name: appear, moveBalanceSym; }
+	.ico-cat { animation-name: appear, moveBalance; }
+	.ico-snake { animation-name: appearSnake, moveBalance; }
+	.ico-couple { animation-name: appear, coupleBounce; }
 
-.in-view .ico-dog, .in-view .ico-cat {
-	animation-duration: 1s, 1s;
-	animation-timing-function: ease-in-out, ease-in-out;
-	animation-iteration-count: 1, infinite;
-	animation-fill-mode: forwards, none;
+	.ico-dog, .ico-cat {
+		animation-duration: 1s, 1s;
+		animation-timing-function: ease-in-out, ease-in-out;
+		animation-iteration-count: 1, infinite;
+		animation-fill-mode: forwards, none;
+	}
+	.ico-snake {
+		animation-duration: 1s, 1s;
+		animation-timing-function: ease-in-out, ease-in-out;
+		animation-iteration-count: 1, infinite;
+		animation-fill-mode: forwards, none;
+	}
+	.ico-couple {
+		animation-duration: 1s, 2s;
+		animation-timing-function: ease-in-out, ease-in-out;
+		animation-iteration-count: 1, infinite;
+		animation-fill-mode: forwards, none;
+		animation-direction: normal, alternate-reverse;
+	}
+	.ico-dog { animation-delay: 3s, 0s; }
+	.ico-cat { animation-delay: 3.7s, 0.7s; }
+	.ico-snake { animation-delay: 4.3s, 5.3s; }
+	.ico-couple { animation-delay: 5.3s, 5.3s; }
+	.creation-title.animals { animation-delay: 5.5s; }
+	.creation-title.men { animation-delay: 7s; }
+	.next svg { animation-delay: 10s; }
 }
-.in-view .ico-snake {
-	animation-duration: 1s, 1s;
-	animation-timing-function: ease-in-out, ease-in-out;
-	animation-iteration-count: 1, infinite;
-	animation-fill-mode: forwards, none;
-}
-.in-view .ico-couple {
-	animation-duration: 1s, 2s;
-	animation-timing-function: ease-in-out, ease-in-out;
-	animation-iteration-count: 1, infinite;
-	animation-fill-mode: forwards, none;
-	animation-direction: normal, alternate-reverse;
-}
-.in-view .ico-dog { animation-delay: 3s, 0s; }
-.in-view .ico-cat { animation-delay: 3.7s, 0.7s; }
-.in-view .ico-snake { animation-delay: 4.3s, 5.3s; }
-.in-view .ico-couple { animation-delay: 5.3s, 5.3s; }
-.in-view .creation-title.animals { animation-delay: 5.5s; }
-.in-view .creation-title.men { animation-delay: 7s; }
 /* END DAY 6 */
 
 
 
+/* DAY 7 */
+#dayShabat {
+	.ico-bread-cup, .ico-candles { max-width: 150px; max-height: 150px; opacity: 0; position: absolute; }
+	.ico-bread-cup { top: 33vh; left: calc(50vw - 150px); }
+	.ico-candles { top: 33vh; left: 50vw; }
+	@media (min-width: 640px) {
+		.ico-bread-cup, .ico-candles { max-width: none; max-height: none; height: 250px; }
+		.ico-bread-cup { left: calc(50vw - 250px); }
+		.ico-candles {  }
+	}
+}
+#dayShabat.in-view {
+	.ico-bread-cup, .ico-candles { 
+		animation-name: shabbathElt;  
+		animation-duration: 2s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+	}
+	.ico-bread-cup { animation-delay: 3s; }
+	.ico-candles { animation-delay: 5s; }
+	.next svg { animation-delay: 8s; }
+}
+/* END DAY 7 */
+
+
+
 /* Fixes for small height */
-@media screen and (max-height: 500px) {
+@media (max-height: 500px) {
 	.arrow-text { display: none; }
 	.top .next { position: static; }
 	.top .next svg { position: absolute; bottom: calc(100vh + 20px); left: calc(50vw - 25px); }
@@ -584,6 +614,10 @@ a { text-decoration: none; color: #fff; }
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.5; letter-spacing: 30px; padding-left: 15px; filter: blur(0px); }
 }
+@keyframes shabbathElt {
+	0%   { transform: scale(0); opacity: 0; filter: blur(200px); }
+	100% { transform: scale(1); opacity: 1; filter: blur(0px); }
+}
 
 
 
@@ -593,25 +627,114 @@ a { text-decoration: none; color: #fff; }
 
 
 
-:lang(en), .en {
+/* TRANSLATIONS */
+// :lang(en), .en {
 	.h1:after { content: "7 Days"; }
-	#day1 .day-title:after { content: "1 Day"; }
-	#day1 .light > div:after { content: "Light"; }
-	#day1 .darkness > div:after { content: "Darkness"; }
-}
+	#day1 {
+		.day-title:after { content: "1 Day"; }
+		.light > div:after { content: "Light"; }
+		.darkness > div:after { content: "Darkness"; }
+	}
+	#day2 {
+		.day-title:after { content: "Day 2"; }
+		.sky:after { content: "Sky"; }
+	}
+	#day3 {
+		.day-title:after { content: "Day 3"; }
+		.land:after { content: "Land"; }
+	}
+	#day4 {
+		.day-title:after { content: "Day 4"; }
+		.moon:after { content: "Moon"; }
+		.stars:after { content: "Stars"; }
+		.sun:after { content: "Sun"; }
+	}
+	#day5 {
+		.day-title:after { content: "Day 5"; }
+		.birds:after { content: "Birds"; }
+		.fish:after { content: "Fishes"; }
+	}
+	#day6 {
+		.day-title:after { content: "Day 6"; }
+		.animals:after { content: "Animals"; }
+		.men:after { content: "Men"; }
+	}
+	#dayShabat {
+		.day-title:after { content: "Shabbath"; }
+	}
+// }
 :lang(fr), .fr {
 	.h1:after { content: "7 Jours"; }
-	#day1 .day-title:after { content: "1 Jour"; }
-	#day1 .light > div:after { content: "Lumière"; }
-	#day1 .darkness > div:after { content: "Obscurité"; }
+	#day1 {
+		.day-title:after { content: "1 Jour"; }
+		.light > div:after { content: "Lumière"; }
+		.darkness > div:after { content: "Obscurité"; }
+	}
+	#day2 {
+		.day-title:after { content: "Jour 2"; }
+		.sky:after { content: "Ciel"; }
+	}
+	#day3 {
+		.day-title:after { content: "Jour 3"; }
+		.land:after { content: "Terre"; }
+	}
+	#day4 {
+		.day-title:after { content: "Jour 4"; }
+		.moon:after { content: "Lune"; }
+		.stars:after { content: "Etoiles"; }
+		.sun:after { content: "Soleil"; }
+	}
+	#day5 {
+		.day-title:after { content: "Jour 5"; }
+		.birds:after { content: "Oiseaux"; }
+		.fish:after { content: "Poissons"; }
+	}
+	#day6 {
+		.day-title:after { content: "Jour 6"; }
+		.animals:after { content: "Animaux"; }
+		.men:after { content: "Homme"; }
+	}
+	#dayShabat {
+		.day-title:after { content: "Chabbath"; }
+	}
 }
 :lang(he), .he {
-	direction: rtl;
-	.h1:after { content: "7 ימים"; }
-	#day1 .day-title:after { content: "יום 1"; }
-	#day1 .light > div:after { content: "אור"; }
-	#day1 .darkness > div:after { content: "חושך"; }
+	.txt { direction: rtl; }
+	.h1:after { content: "7 ימים" }
+	#day1 {
+		.day-title:after { content: "יום 1"; }
+		.light > div:after { content: "אור"; }
+		.darkness > div:after { content: "חושך"; }
+	}
+	#day2 {
+		.day-title:after { content: "יום2"; }
+		.sky:after { content: "Sky"; }
+	}
+	#day3 {
+		.day-title:after { content: "יום3"; }
+		.land:after { content: "Land"; }
+	}
+	#day4 {
+		.day-title:after { content: "יום4"; }
+		.moon:after { content: "Moon"; }
+		.stars:after { content: "Stars"; }
+		.sun:after { content: "Sun"; }
+	}
+	#day5 {
+		.day-title:after { content: "יום5"; }
+		.birds:after { content: "Birds"; }
+		.fish:after { content: "Fishes"; }
+	}
+	#day6 {
+		.day-title:after { content: "יום6"; }
+		.animals:after { content: "Animals"; }
+		.men:after { content: "Men"; }
+	}
+	#dayShabat {
+		.day-title:after { content: "Shabbath"; }
+	}
 }
+/* END TRANSLATIONS */
 
 
 

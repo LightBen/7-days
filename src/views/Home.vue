@@ -3,7 +3,7 @@
         <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
         <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
         <section class="main-section top target" id="top">
-            <h1 class="h1"></h1>
+            <h1 class="h1 txt"></h1>
             <div class="controls">
                 <a class="prev" href="#" title="7 Days">
                     <i></i>
@@ -44,12 +44,12 @@
             <symbol viewBox="0 0 511.999 511.999" id="wave-3" xmlns="http://www.w3.org/2000/svg"><path d="M511.999 230.469c-36.574 0-36.574-33.536-73.147-33.536s-36.574 33.536-73.147 33.536c-36.572 0-36.572-33.536-73.144-33.536s-36.571 33.536-73.141 33.536c-36.569 0-36.569-33.536-73.138-33.536-36.57 0-36.57 33.536-73.141 33.536S36.57 196.933 0 196.933v84.596c36.571 0 36.571 33.536 73.141 33.536s36.57-33.536 73.141-33.536c36.569 0 36.569 33.536 73.138 33.536 36.571 0 36.571-33.536 73.141-33.536 36.572 0 36.572 33.536 73.144 33.536 36.574 0 36.574-33.536 73.147-33.536s36.574 33.536 73.147 33.536" fill="#319fbc"/><path d="M511.999 145.873c-36.574 0-36.574-33.536-73.147-33.536s-36.574 33.536-73.147 33.536c-36.572 0-36.572-33.536-73.144-33.536s-36.571 33.536-73.141 33.536c-36.569 0-36.569-33.536-73.138-33.536-36.57 0-36.57 33.536-73.141 33.536S36.57 112.337 0 112.337v84.596c36.571 0 36.571 33.536 73.141 33.536s36.57-33.536 73.141-33.536c36.569 0 36.569 33.536 73.138 33.536 36.571 0 36.571-33.536 73.141-33.536 36.572 0 36.572 33.536 73.144 33.536 36.574 0 36.574-33.536 73.147-33.536s36.574 33.536 73.147 33.536" fill="#2690a8"/><path d="M511.999 315.066c-36.574 0-36.574-33.536-73.147-33.536s-36.574 33.536-73.147 33.536c-36.572 0-36.572-33.536-73.144-33.536s-36.571 33.536-73.141 33.536c-36.569 0-36.569-33.536-73.138-33.536-36.57 0-36.57 33.536-73.141 33.536S36.57 281.529 0 281.529v84.596c36.571 0 36.571 33.536 73.141 33.536s36.57-33.536 73.141-33.536c36.569 0 36.569 33.536 73.138 33.536 36.571 0 36.571-33.536 73.141-33.536 36.572 0 36.572 33.536 73.144 33.536 36.574 0 36.574-33.536 73.147-33.536s36.574 33.536 73.147 33.536" fill="#40b3db"/></symbol>
         </svg>
         <section class="main-section day check-elem-in check-elem-out target" id="day1">
-            <div class="day-title"></div>
-            <div class="creation-title light">
+            <div class="day-title txt"></div>
+            <div class="creation-title light txt">
                 <div class="dtc"></div>
             </div>
             <div class="lightsun"></div>
-            <div class="creation-title darkness">
+            <div class="creation-title darkness txt">
                 <div class="dtc"></div>
             </div>
             <div class="darksun"></div>
@@ -65,8 +65,8 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out target" id="day2">
-            <div class="day-title">DAY 2</div>
-            <div class="creation-title sky">Sky</div>
+            <div class="day-title txt"></div>
+            <div class="creation-title sky txt"></div>
             <svg class="ico ico-clouds">
                 <use xlink:href="#clouds" href="#clouds"></use>
             </svg>
@@ -88,8 +88,8 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day3">
-            <div class="day-title">DAY 3</div>
-            <div class="creation-title land">Land</div>
+            <div class="day-title txt"></div>
+            <div class="creation-title land txt"></div>
             <div class="earth-container">
                 <svg viewBox="0 0 58 58" class="ico ico-earth">
                     <use xlink:href="#earth" href="#earth"></use>
@@ -108,10 +108,10 @@
             <div class="gradient-color"></div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day4">
-            <div class="day-title">DAY 4</div>
-            <div class="creation-title moon">Moon</div>
-            <div class="creation-title stars">Stars</div>
-            <div class="creation-title sun">Sun</div>
+            <div class="day-title txt"></div>
+            <div class="creation-title moon txt"></div>
+            <div class="creation-title stars txt"></div>
+            <div class="creation-title sun txt"></div>
             <svg class="ico ico-sun">
                 <use xlink:href="#sun" href="#sun"></use>
             </svg>
@@ -130,9 +130,9 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day5">
-            <div class="day-title">DAY 5</div>
-            <div class="creation-title birds">Birds</div>
-            <div class="creation-title fish">Fishes</div>
+            <div class="day-title txt"></div>
+            <div class="creation-title birds txt"></div>
+            <div class="creation-title fish txt"></div>
             <svg class="ico ico-bird-1">
                 <use xlink:href="#bird-1" href="#bird-1"></use>
             </svg>
@@ -163,9 +163,9 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day6">
-            <div class="day-title">DAY 6</div>
-            <div class="creation-title animals">Animals</div>
-            <div class="creation-title men">Men</div>
+            <div class="day-title txt"></div>
+            <div class="creation-title animals txt"></div>
+            <div class="creation-title men txt"></div>
             <svg class="ico ico-dog">
                 <use xlink:href="#dog" href="#dog"></use>
             </svg>
@@ -190,7 +190,13 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="dayShabat">
-            <div class="day-title">Shabbath</div>
+            <div class="day-title txt"></div>
+            <svg class="ico ico-bread-cup">
+                <use xlink:href="#bread-cup" href="#bread-cup"></use>
+            </svg>
+            <svg class="ico ico-candles">
+                <use xlink:href="#candles" href="#candles"></use>
+            </svg>
             <div class="controls">
                 <a class="prev" href="#day6" title="Back to Day 6">
                     <i></i>
