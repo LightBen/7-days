@@ -209,7 +209,7 @@
             </div>
         </section>
         <section class="main-section bottom check-elem-in check-elem-out" id="bottom">
-            <div class="h1"></div>
+            <div class="h1 txt"></div>
             <div class="controls">
                 <a class="prev" href="#dayShabat" title="Back to Day 7">
                     <i></i>
