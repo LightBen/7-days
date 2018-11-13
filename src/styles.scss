@@ -166,12 +166,12 @@ a { text-decoration: none; color: #fff; }
 
 /* DAY 2 */
 #day2 .creation-title.sky { 
-	position: absolute; top: 30vh; width: 100%; font-size: 10rem; opacity: 0;
+	position: absolute; top: 40vh; width: 100%; font-size: 13rem; opacity: 0;
 	animation-duration: 3s;
 }
 .in-view .creation-title.sky { animation-name: appearDay2Title; }
 @media screen and (min-width: 640px) {
-	#day2 .creation-title.sky { font-size: 30rem; }
+	#day2 .creation-title.sky { top: 30vh; font-size: 30rem; }
 }
 #day2 .ico { position: absolute; display: block; }
 .ico-clouds { width: 40vw; top: 5vh; }
@@ -210,7 +210,7 @@ a { text-decoration: none; color: #fff; }
 /* END DAY 2 */
 
 /* DAY 3 */
-.creation-title.land { position: absolute; width: 100%; top: 20vh; font-size: 8rem; opacity: 0; }
+.creation-title.land { position: absolute; width: 100%; top: 20vh; font-size: 7rem; opacity: 0; }
 .in-view .creation-title.land { animation-name: appearDay3Title; animation-duration: 3s; }
 .earth-container { position: absolute; top: 50vh; left: 0; width: 100%; }
 .in-view .earth-container {
@@ -228,6 +228,9 @@ a { text-decoration: none; color: #fff; }
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+}
+@media screen and (min-width: 480px) {
+	.creation-title.land { top: 27vh; font-size: 8rem; }
 }
 @media screen and (min-width: 640px) {
 	.creation-title.land { top: 27vh; font-size: 20rem; }
@@ -252,7 +255,7 @@ a { text-decoration: none; color: #fff; }
 .creation-title.sun { top: 60vh; }
 
 #day4 .ico { position: absolute; display: block; }
-.ico-sun, .ico-moon { width: 100%; height: 100%; max-height: 150px; max-width: 150px; }
+.ico-sun, .ico-moon { width: 100%; height: 100%; max-height: 150px; max-width: 150px; opacity: 0; }
 .ico-sun { bottom: calc(100vh + 50px); left: 30px; }
 .ico-moon { top: 50px; right: 30px; }
 
@@ -273,20 +276,18 @@ a { text-decoration: none; color: #fff; }
 }
 
 .in-view .ico-sun { 
-	opacity: 0;
-	animation-name: sun;
-	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+	animation-name: sun, sunround;
+	animation-duration: 3s, 12s;
+	animation-timing-function: ease-in-out, linear;
+	animation-iteration-count: 1, infinite;
+	animation-fill-mode: forwards, none;
 }
 .in-view .ico-moon { 
-	opacity: 0;
-	animation-name: moon;
-	animation-duration: 3s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
+	animation-name: moon, moonfloat;
+	animation-duration: 3s, 6s;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-iteration-count: 1, infinite;
+	animation-fill-mode: forwards, both;
 }
 .in-view .ico-sun { animation-delay: 2s; }
 .in-view .ico-moon { animation-delay: 5s; }
@@ -360,6 +361,7 @@ a { text-decoration: none; color: #fff; }
 	.creation-title.men { top: 60vh; }
 
 	.ico { position: absolute; width: 250px; height: 250px; max-width: 40vw; max-height: 30vw; }
+	.ico-dog, .ico-cat, .ico-snake, .ico-couple { opacity: 0; }
 	.ico-dog { left: 30px; top: 10px; }
 	.ico-cat { right: 30px; top: 25vh; }
 	.ico-snake { left: 30px; top: 50vh; }
@@ -371,6 +373,36 @@ a { text-decoration: none; color: #fff; }
 		.creation-title.men { top: 60vh }
 	}
 }
+.in-view .ico-dog { animation-name: appear, moveBalanceSym; }
+.in-view .ico-cat { animation-name: appear, moveBalance; }
+.in-view .ico-snake { animation-name: appearSnake, moveBalance; }
+.in-view .ico-couple { animation-name: appear, coupleBounce; }
+
+.in-view .ico-dog, .in-view .ico-cat {
+	animation-duration: 1s, 1s;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-iteration-count: 1, infinite;
+	animation-fill-mode: forwards, none;
+}
+.in-view .ico-snake {
+	animation-duration: 1s, 1s;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-iteration-count: 1, infinite;
+	animation-fill-mode: forwards, none;
+}
+.in-view .ico-couple {
+	animation-duration: 1s, 2s;
+	animation-timing-function: ease-in-out, ease-in-out;
+	animation-iteration-count: 1, infinite;
+	animation-fill-mode: forwards, none;
+	animation-direction: normal, alternate-reverse;
+}
+.in-view .ico-dog { animation-delay: 3s, 0s; }
+.in-view .ico-cat { animation-delay: 3.7s, 0.7s; }
+.in-view .ico-snake { animation-delay: 4.3s, 5.3s; }
+.in-view .ico-couple { animation-delay: 5.3s, 5.3s; }
+.in-view .creation-title.animals { animation-delay: 5.5s; }
+.in-view .creation-title.men { animation-delay: 7s; }
 /* END DAY 6 */
 
 
@@ -470,12 +502,39 @@ a { text-decoration: none; color: #fff; }
 	95%  { opacity: 1; }
 	100% { transform: translateX(100vw); opacity: 0; }
 }
+@keyframes moveBalance {
+	0%   { transform: rotate(-5deg); }
+	50%  { transform: rotate(5deg); }
+	100% { transform: rotate(-5deg); }
+}
+@keyframes moveBalanceSym {
+	0%   { transform: scaleX(-1) rotate(-5deg); }
+	50%  { transform: scaleX(-1) rotate(5deg); }
+	100% { transform: scaleX(-1) rotate(-5deg); }
+}
+@keyframes appearSnake {
+	0%   { transform: scale(0) rotate(-8deg); opacity: 0; }
+	10%  { transform: scale(0.1) rotate(8deg); }
+	20%  { transform: scale(0.2) rotate(-8deg); }
+	30%  { transform: scale(0.3) rotate(8deg); }
+	40%  { transform: scale(0.4) rotate(-8deg); }
+	50%  { transform: scale(0.5) rotate(8deg); }
+	60%  { transform: scale(0.6) rotate(-8deg); }
+	70%  { transform: scale(0.7) rotate(8deg); }
+	80%  { transform: scale(0.8) rotate(-8deg); }
+	90%  { transform: scale(0.9) rotate(8deg); }
+	100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+}
+@keyframes coupleBounce {
+	0%   { transform: translateY(40px); }
+	100% { transform: translateY(10px); }
+}
 
 
 
 @keyframes appearDay3Title {
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
-	100% { opacity: 0.5; letter-spacing: 30px; padding-left: 15px; filter: blur(0px); }
+	100% { opacity: 0.5; letter-spacing: 30px; padding-left: 30px; filter: blur(0px); }
 }
 @keyframes earth {
 	0%   { transform: rotate(90deg) scale(0); opacity: 0; filter: blur(200px); }
@@ -495,6 +554,15 @@ a { text-decoration: none; color: #fff; }
 @keyframes moon {
 	0%   { transform: rotate(90deg) scale(0); opacity: 0; filter: blur(200px); }
 	100% { transform: rotate(0) scale(1); opacity: 1; filter: blur(0px); }
+}
+@keyframes sunround {
+	0%   { transform: rotate(360deg); }
+	100% { transform: rotate(0); }
+}
+@keyframes moonfloat {
+	0%   { transform: rotate(-20deg); }
+	50%  { transform: rotate(20deg); }
+	100% { transform: rotate(-20deg); }
 }
 
 

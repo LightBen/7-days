@@ -164,7 +164,7 @@
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day6">
             <div class="day-title">DAY 6</div>
-            <div class="creation-title animals">Other animals</div>
+            <div class="creation-title animals">Animals</div>
             <div class="creation-title men">Men</div>
             <svg class="ico ico-dog">
                 <use xlink:href="#dog" href="#dog"></use>
