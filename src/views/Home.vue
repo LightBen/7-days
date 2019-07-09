@@ -3,11 +3,11 @@
         <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
         <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
         <section class="main-section top target" id="top">
-            <h1 class="h1 txt"></h1>
+            <a href=""></a>
+            <h1 class="h1 txt">
+                {{$t('AppName')}}
+            </h1>
             <div class="controls">
-                <a class="prev" href="#" title="7 Days">
-                    <i></i>
-                </a>
                 <a class="next" href="#day1" title="Jump to Day 1">
                     <svg class="ico ico-click">
                         <use xlink:href="#ico-click" href="#ico-click"></use>
@@ -44,13 +44,13 @@
             <symbol viewBox="0 0 511.999 511.999" id="wave-3" xmlns="http://www.w3.org/2000/svg"><path d="M511.999 230.469c-36.574 0-36.574-33.536-73.147-33.536s-36.574 33.536-73.147 33.536c-36.572 0-36.572-33.536-73.144-33.536s-36.571 33.536-73.141 33.536c-36.569 0-36.569-33.536-73.138-33.536-36.57 0-36.57 33.536-73.141 33.536S36.57 196.933 0 196.933v84.596c36.571 0 36.571 33.536 73.141 33.536s36.57-33.536 73.141-33.536c36.569 0 36.569 33.536 73.138 33.536 36.571 0 36.571-33.536 73.141-33.536 36.572 0 36.572 33.536 73.144 33.536 36.574 0 36.574-33.536 73.147-33.536s36.574 33.536 73.147 33.536" fill="#319fbc"/><path d="M511.999 145.873c-36.574 0-36.574-33.536-73.147-33.536s-36.574 33.536-73.147 33.536c-36.572 0-36.572-33.536-73.144-33.536s-36.571 33.536-73.141 33.536c-36.569 0-36.569-33.536-73.138-33.536-36.57 0-36.57 33.536-73.141 33.536S36.57 112.337 0 112.337v84.596c36.571 0 36.571 33.536 73.141 33.536s36.57-33.536 73.141-33.536c36.569 0 36.569 33.536 73.138 33.536 36.571 0 36.571-33.536 73.141-33.536 36.572 0 36.572 33.536 73.144 33.536 36.574 0 36.574-33.536 73.147-33.536s36.574 33.536 73.147 33.536" fill="#2690a8"/><path d="M511.999 315.066c-36.574 0-36.574-33.536-73.147-33.536s-36.574 33.536-73.147 33.536c-36.572 0-36.572-33.536-73.144-33.536s-36.571 33.536-73.141 33.536c-36.569 0-36.569-33.536-73.138-33.536-36.57 0-36.57 33.536-73.141 33.536S36.57 281.529 0 281.529v84.596c36.571 0 36.571 33.536 73.141 33.536s36.57-33.536 73.141-33.536c36.569 0 36.569 33.536 73.138 33.536 36.571 0 36.571-33.536 73.141-33.536 36.572 0 36.572 33.536 73.144 33.536 36.574 0 36.574-33.536 73.147-33.536s36.574 33.536 73.147 33.536" fill="#40b3db"/></symbol>
         </svg>
         <section class="main-section day check-elem-in check-elem-out target" id="day1">
-            <div class="day-title txt"></div>
+            <div class="day-title txt"> {{$t('Day_1')}}</div>
             <div class="creation-title light txt">
-                <div class="dtc"></div>
+                <div class="dtc"> {{$t('Light')}}</div>
             </div>
             <div class="lightsun"></div>
             <div class="creation-title darkness txt">
-                <div class="dtc"></div>
+                <div class="dtc"> {{$t('Darkness')}}</div>
             </div>
             <div class="darksun"></div>
             <div class="controls">
@@ -65,8 +65,8 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out target" id="day2">
-            <div class="day-title txt"></div>
-            <div class="creation-title sky txt"></div>
+            <div class="day-title txt">{{$t('Day_2')}}</div>
+            <div class="creation-title sky txt">{{$t('Sky')}}</div>
             <svg class="ico ico-clouds">
                 <use xlink:href="#clouds" href="#clouds"></use>
             </svg>
@@ -88,8 +88,8 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day3">
-            <div class="day-title txt"></div>
-            <div class="creation-title land txt"></div>
+            <div class="day-title txt">{{$t('Day_3')}}</div>
+            <div class="creation-title land txt">{{$t('Land')}}</div>
             <div class="earth-container">
                 <svg viewBox="0 0 58 58" class="ico ico-earth">
                     <use xlink:href="#earth" href="#earth"></use>
@@ -108,10 +108,10 @@
             <div class="gradient-color"></div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day4">
-            <div class="day-title txt"></div>
-            <div class="creation-title moon txt"></div>
-            <div class="creation-title stars txt"></div>
-            <div class="creation-title sun txt"></div>
+            <div class="day-title txt">{{$t('Day_4')}}</div>
+            <div class="creation-title moon txt">{{$t('Moon')}}</div>
+            <div class="creation-title stars txt">{{$t('Stars')}}</div>
+            <div class="creation-title sun txt">{{$t('Sun')}}</div>
             <svg class="ico ico-sun">
                 <use xlink:href="#sun" href="#sun"></use>
             </svg>
@@ -130,9 +130,9 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day5">
-            <div class="day-title txt"></div>
-            <div class="creation-title birds txt"></div>
-            <div class="creation-title fish txt"></div>
+            <div class="day-title txt">{{$t('Day_5')}}</div>
+            <div class="creation-title birds txt">{{$t('Birds')}}</div>
+            <div class="creation-title fish txt">{{$t('Fishes')}}</div>
             <svg class="ico ico-bird-1">
                 <use xlink:href="#bird-1" href="#bird-1"></use>
             </svg>
@@ -163,9 +163,9 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="day6">
-            <div class="day-title txt"></div>
-            <div class="creation-title animals txt"></div>
-            <div class="creation-title men txt"></div>
+            <div class="day-title txt">{{$t('Day_6')}}</div>
+            <div class="creation-title animals txt">{{$t('Animals')}}</div>
+            <div class="creation-title men txt">{{$t('Men')}}</div>
             <svg class="ico ico-dog">
                 <use xlink:href="#dog" href="#dog"></use>
             </svg>
@@ -190,7 +190,7 @@
             </div>
         </section>
         <section class="main-section day check-elem-in check-elem-out" id="dayShabat">
-            <div class="day-title txt"></div>
+            <div class="day-title txt">{{$t('Day_7')}}</div>
             <svg class="ico ico-bread-cup">
                 <use xlink:href="#bread-cup" href="#bread-cup"></use>
             </svg>
@@ -226,11 +226,19 @@
 
 <script>
 // @ is an alias to /src 
-// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
     name: 'home',
-    components: {
+    data() {
+        return {
+            lang:''
+        }
+    },
+    methods: {
+        mounted() {
+            console.log("maounted!");
+            
+        },
 // HelloWorld
 }
 }
