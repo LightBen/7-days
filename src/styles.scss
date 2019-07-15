@@ -39,10 +39,16 @@ body { margin: 0; background-color: #000; font-size: 2rem; text-align: center; f
 .top svg { animation-duration: 2s; }
 .bottom .next { bottom: 1rem; }
 .bottom svg { animation: float 6s ease-in-out infinite; }
-.controls { position: absolute; z-index: 100; width: 100vw; height: 100vh; top: 0; left: 0; }
+.controls {     position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 12vh;
+    bottom: 0px;
+    top: 85vh;
+  }
 .controls .prev, .next { display: block; width: 100%; position: relative; }
-.controls .prev { height: 33vh; }
-.controls .next { height: 67vh; }
+.controls .prev {     display: none; height: 33vh; }
+.controls .next { height: 15vh; }
 .controls .next svg { position: absolute; bottom: 50px; left: calc(50% - 25px); }
 @media (max-width: 667px) and (orientation : landscape) {
 	.controls .next svg { bottom: 15px; }
@@ -792,116 +798,115 @@ a { text-decoration: none; color: #fff; }
 
 /* TRANSLATIONS */
 // :lang(en), .en {
-	.h1:after { content: "7 Days"; }
-	#day1 {
-		.day-title:after { content: "1 Day"; }
-		.light > div:after { content: "Light"; }
-		.darkness > div:after { content: "Darkness"; }
-	}
-	#day2 {
-		.day-title:after { content: "Day 2"; }
-		.sky:after { content: "Sky"; }
-	}
-	#day3 {
-		.day-title:after { content: "Day 3"; }
-		.land:after { content: "Land"; }
-	}
-	#day4 {
-		.day-title:after { content: "Day 4"; }
-		.moon:after { content: "Moon"; }
-		.stars:after { content: "Stars"; }
-		.sun:after { content: "Sun"; }
-	}
-	#day5 {
-		.day-title:after { content: "Day 5"; }
-		.birds:after { content: "Birds"; }
-		.fish:after { content: "Fishes"; }
-	}
-	#day6 {
-		.day-title:after { content: "Day 6"; }
-		.animals:after { content: "Animals"; }
-		.men:after { content: "Men"; }
-	}
-	#dayShabat {
-		.day-title:after { content: "Shabbath"; }
-	}
+// 	#day1 {
+// 		// .day-title:after { content: "1 Day"; }
+// 		// .light > div:after { content: "Light"; }
+// 		// .darkness > div:after { content: "Darkness"; }
+// 	}
+// 	#day2 {
+// 		.day-title:after { content: "Day 2"; }
+// 		.sky:after { content: "Sky"; }
+// 	}
+// 	#day3 {
+// 		.day-title:after { content: "Day 3"; }
+// 		.land:after { content: "Land"; }
+// 	}
+// 	#day4 {
+// 		.day-title:after { content: "Day 4"; }
+// 		.moon:after { content: "Moon"; }
+// 		.stars:after { content: "Stars"; }
+// 		.sun:after { content: "Sun"; }
+// 	}
+// 	#day5 {
+// 		.day-title:after { content: "Day 5"; }
+// 		.birds:after { content: "Birds"; }
+// 		.fish:after { content: "Fishes"; }
+// 	}
+// 	#day6 {
+// 		.day-title:after { content: "Day 6"; }
+// 		.animals:after { content: "Animals"; }
+// 		.men:after { content: "Men"; }
+// 	}
+// 	#dayShabat {
+// 		.day-title:after { content: "Shabbath"; }
+// 	}
+// // }
+// :lang(fr), .fr {
+// 	.h1:after { content: "7 Jours"; }
+// 	#day1 {
+// 		.day-title:after { content: "1 Jour"; }
+// 		.light > div:after { content: "Lumière"; }
+// 		.darkness > div:after { content: "Obscurité"; }
+// 	}
+// 	#day2 {
+// 		.day-title:after { content: "Jour 2"; }
+// 		.sky:after { content: "Ciel"; }
+// 	}
+// 	#day3 {
+// 		.day-title:after { content: "Jour 3"; }
+// 		.land:after { content: "Terre"; }
+// 	}
+// 	#day4 {
+// 		.day-title:after { content: "Jour 4"; }
+// 		.moon:after { content: "Lune"; }
+// 		.stars:after { content: "Etoiles"; }
+// 		.sun:after { content: "Soleil"; }
+// 	}
+// 	#day5 {
+// 		.day-title:after { content: "Jour 5"; }
+// 		.birds:after { content: "Oiseaux"; }
+// 		.fish:after { content: "Poissons"; }
+// 	}
+// 	#day6 {
+// 		.day-title:after { content: "Jour 6"; }
+// 		.animals:after { content: "Animaux"; }
+// 		.men:after { content: "Homme"; }
+// 	}
+// 	#dayShabat {
+// 		.day-title:after { content: "Chabbath"; }
+// 	}
 // }
-:lang(fr), .fr {
-	.h1:after { content: "7 Jours"; }
-	#day1 {
-		.day-title:after { content: "1 Jour"; }
-		.light > div:after { content: "Lumière"; }
-		.darkness > div:after { content: "Obscurité"; }
-	}
-	#day2 {
-		.day-title:after { content: "Jour 2"; }
-		.sky:after { content: "Ciel"; }
-	}
-	#day3 {
-		.day-title:after { content: "Jour 3"; }
-		.land:after { content: "Terre"; }
-	}
-	#day4 {
-		.day-title:after { content: "Jour 4"; }
-		.moon:after { content: "Lune"; }
-		.stars:after { content: "Etoiles"; }
-		.sun:after { content: "Soleil"; }
-	}
-	#day5 {
-		.day-title:after { content: "Jour 5"; }
-		.birds:after { content: "Oiseaux"; }
-		.fish:after { content: "Poissons"; }
-	}
-	#day6 {
-		.day-title:after { content: "Jour 6"; }
-		.animals:after { content: "Animaux"; }
-		.men:after { content: "Homme"; }
-	}
-	#dayShabat {
-		.day-title:after { content: "Chabbath"; }
-	}
-}
-:lang(he), .he {
-	.txt { 
-		direction: rtl;
-		:after, &:after { position: relative; }
-		&.creation-title { line-height: 0.7; }
-	}
-	.h1:after { content: "7 ימים" }
-	#day1 {
-		.day-title:after { content: "יום 1"; }
-		.light > div:after { content: "אור"; left: 2px; }
-		.darkness > div:after { content: "חושך"; left: 2px; }
-	}
-	#day2 {
-		.day-title:after { content: "יום2"; }
-		.sky:after { content: "שמים"; left: 8px; }
-	}
-	#day3 {
-		.day-title:after { content: "יום3"; }
-		.land:after { content: "ארץ"; }
-	}
-	#day4 {
-		.day-title:after { content: "יום4"; }
-		.creation-title:after { left: 7px; }
-		.moon:after { content: "ירח";  }
-		.stars:after { content: "כוכבים"; }
-		.sun:after { content: "שמש"; }
-	}
-	#day5 {
-		.day-title:after { content: "יום5"; }
-		.birds:after { content: "ציפורים"; }
-		.fish:after { content: "דגים"; }
-	}
-	#day6 {
-		.day-title:after { content: "יום6"; }
-		.animals:after { content: "חיות"; }
-		.men:after { content: "אדם"; }
-	}
-	#dayShabat {
-		.day-title:after { content: "שבת"; }
-	}
-}
+// :lang(he), .he {
+// 	.txt { 
+// 		direction: rtl;
+// 		:after, &:after { position: relative; }
+// 		&.creation-title { line-height: 0.7; }
+// 	}
+// 	.h1:after { content: "7 ימים" }
+// 	#day1 {
+// 		.day-title:after { content: "יום 1"; }
+// 		.light > div:after { content: "אור"; left: 2px; }
+// 		.darkness > div:after { content: "חושך"; left: 2px; }
+// 	}
+// 	#day2 {
+// 		.day-title:after { content: "יום2"; }
+// 		.sky:after { content: "שמים"; left: 8px; }
+// 	}
+// 	#day3 {
+// 		.day-title:after { content: "יום3"; }
+// 		.land:after { content: "ארץ"; }
+// 	}
+// 	#day4 {
+// 		.day-title:after { content: "יום4"; }
+// 		.creation-title:after { left: 7px; }
+// 		.moon:after { content: "ירח";  }
+// 		.stars:after { content: "כוכבים"; }
+// 		.sun:after { content: "שמש"; }
+// 	}
+// 	#day5 {
+// 		.day-title:after { content: "יום5"; }
+// 		.birds:after { content: "ציפורים"; }
+// 		.fish:after { content: "דגים"; }
+// 	}
+// 	#day6 {
+// 		.day-title:after { content: "יום6"; }
+// 		.animals:after { content: "חיות"; }
+// 		.men:after { content: "אדם"; }
+// 	}
+// 	#dayShabat {
+// 		.day-title:after { content: "שבת"; }
+// 	}
+//}
 /* END TRANSLATIONS */
 
 
