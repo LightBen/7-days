@@ -1,19 +1,19 @@
 <template>
   <ul class="languagepicker roundborders">
-    <a href="#nl">
-      <li>
-        <a href="#fr">
+    <router-link :to="{ path: 'fr' }">
+     
+        
           <li>
             <img src="http://i65.tinypic.com/300b30k.png" />Français
           </li>
-        </a>
-      </li>
-    </a>
-    <a href="#he">
+       
+     
+   </router-link>
+    <router-link :to="{ path: 'en' }">
       <li>
         <img src="http://i64.tinypic.com/fd60km.png" />English
       </li>
-    </a>
+    </router-link>
   </ul>
 </template>
 

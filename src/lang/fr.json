@@ -12,17 +12,17 @@
     "Birds":"צפורים",
     "Fishes":"דגים",
     "Animals":"חיות",
-    "Men":"אדם",
+    "Men":"בני אדם",
 
 
 
 
 
-    "Day_1":"יום ראשון",
-    "Day_2":"יום שני",
-    "Day_3":"יום שלישי",
-    "Day_4":"יום רביעי",
-    "Day_5":"יום חמישי",
-    "Day_6":"יום שישי",
-    "Day_7":"יום שבת"
+    "Day_1":"dimanche",
+    "Day_2":"lundi",
+    "Day_3":"mardi",
+    "Day_4":"mercredi",
+    "Day_5":"jeudi",
+    "Day_6":"vendredi",
+    "Day_7":"samedi"
 }
