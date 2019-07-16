@@ -3,9 +3,8 @@ import VueI18n from 'vue-i18n'
 
 let he = require('./he.json');
 let fr = require('./fr.json');
-import en from './en.json'
-// import tw from './tw.json'
-// import es from './es.json'
+let en = require('./en.json');
+
 
 Vue.use(VueI18n)
 

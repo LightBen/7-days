@@ -5,6 +5,12 @@ import './registerServiceWorker'
 import firebase from 'firebase/app'
 import i18n from './lang/lang.js'
 
+router.beforeEach((to,from,next) =>{
+  let lang = to.params.lang
+  i18n.locale = lang;
+  next();
+
+});
 
 
 new Vue({
@@ -21,6 +27,7 @@ var config = {
   projectId: process.env.FIREBASE_PROJECT_ID,
   messagingSenderId: process.env.FIREBASE_SENDER_ID
 };
+
 firebase.initializeApp(config);
 
 let anchorlinks = document.querySelectorAll('a[href^="#"]')

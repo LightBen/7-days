@@ -24,28 +24,22 @@ export default {
      },
   data() {
     return {
-      lang: "en"
+      lang: "he"
     };
   },
 methods: {
 foo: function() {
-  console.log("button")
  }
 },
 
 beforeMount: function(){
-  let me = this;
- me.$i18n.locale=this.lang;
+
 },
 created:function() {
-  let me = this;
-      me.$router.beforeEach((to, from, next) => {
-      let lang = to.params.lang;
-      me.$i18n.locale=lang
-      next();
-})},
+  
+},
  mounted: function() {
-  console.log("Mounted!")
+ 
  },
 };
 </script>
