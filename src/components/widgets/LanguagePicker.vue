@@ -55,7 +55,7 @@ export default {
     .icon-lang {
         cursor: pointer;
         color: #fff;
-        opacity: 0.5;
+        opacity: 0.3;
         transition: all .2s ease-in-out;
         z-index: 10000;
     }

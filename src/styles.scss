@@ -201,12 +201,15 @@ a { text-decoration: none; color: #fff; }
 }
 :lang(fr), .fr {
 	#day2 {
-		.creation-title { font-size: 10rem; }
+		.creation-title { font-size: 6rem; }
 		@media (min-width: 321px) {
-			.creation-title { font-size: 12rem; }
+			.creation-title { font-size: 6rem; }
 		}
 		@media (min-width: 640px) {
-			.creation-title { font-size: 30rem; }
+			.creation-title { font-size: 17rem; }
+		}
+		@media (min-width: 1200px) {
+			.creation-title { font-size: 22rem; }
 		}
 	}
 }
