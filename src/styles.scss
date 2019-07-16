@@ -39,16 +39,17 @@ body { margin: 0; background-color: #000; font-size: 2rem; text-align: center; f
 .top svg { animation-duration: 2s; }
 .bottom .next { bottom: 1rem; }
 .bottom svg { animation: float 6s ease-in-out infinite; }
-.controls {     position: absolute;
+.controls { 
+	position: absolute;
     z-index: 100;
     width: 100vw;
-    height: 12vh;
+    height: 100vh;
     bottom: 0px;
-    top: 85vh;
+    top: 0;
   }
-.controls .prev, .next { display: block; width: 100%; position: relative; }
-.controls .prev {     display: none; height: 33vh; }
-.controls .next { height: 15vh; }
+.controls .prev, .controls .next { display: block; width: 100%; position: relative; }
+.controls .prev { height: 33vh; }
+.controls .next { height: 67vh; }
 .controls .next svg { position: absolute; bottom: 50px; left: calc(50% - 25px); }
 @media (max-width: 667px) and (orientation : landscape) {
 	.controls .next svg { bottom: 15px; }
@@ -89,6 +90,7 @@ a { text-decoration: none; color: #fff; }
 .gradient-color { width: 100%; height: 50vh; position: absolute; bottom: -1px; z-index: 10; }
 #top .gradient-color { background: linear-gradient(to bottom, transparent, #000); }
 #day3 .gradient-color { background: linear-gradient(to bottom, transparent, #1a2a6c); }
+#top .next { height: 100vh; }
 
 /* SECTIONS */
 #day1 { background: linear-gradient(to bottom, #000000, #000000, #56CCF2); }
