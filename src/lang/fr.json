@@ -2,27 +2,23 @@
     "lang":"fr",
     "dir":"ltr",
     "AppName":"7 Jours",
-    "Darkness":"חושך",
-    "Light":"אור",
-    "Sky":"שמיים",
-    "Land":"יבשה",
-    "Sun":"שמש",
-    "Moon":"ירח",
-    "Stars":"כוכבים",
-    "Birds":"צפורים",
-    "Fishes":"דגים",
-    "Animals":"חיות",
-    "Men":"בני אדם",
+    "Darkness":"Ténèbres",
+    "Light":"Lumière",
+    "Sky":"Cieux",
+    "Land":"Terre",
+    "Sun":"Soleil",
+    "Moon":"Lune",
+    "Stars":"Étoiles",
+    "Birds":"Oiseaux",
+    "Fishes":"Poissons",
+    "Animals":"Animaux",
+    "Men":"Homme",
 
-
-
-
-
-    "Day_1":"dimanche",
-    "Day_2":"lundi",
-    "Day_3":"mardi",
-    "Day_4":"mercredi",
-    "Day_5":"jeudi",
-    "Day_6":"vendredi",
-    "Day_7":"samedi"
+    "Day_1":"1 Jour",
+    "Day_2":"Jour 2",
+    "Day_3":"Jour 3",
+    "Day_4":"Jour 4",
+    "Day_5":"Jour 5",
+    "Day_6":"Jour 6",
+    "Day_7":"Chabbath"
 }
