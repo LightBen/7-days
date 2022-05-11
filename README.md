@@ -1,5 +1,5 @@
 # 7-days
-
+New text here
 ## Project setup
 ```
 npm install
