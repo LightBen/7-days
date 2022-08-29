@@ -2,7 +2,12 @@
 html { font-size: 62.5%; font-family: 'Open Sans', sans-serif; }
 body { margin: 0; background-color: #000; font-size: 2rem; text-align: center; font-weight: 300; color: #fff; height: 100vh; overflow: hidden; }
 
-.main-section { height: 200vh; position: relative; width: 100%; overflow: hidden; }
+.main-section { height: 200vh; position: relative; width: 100%; overflow: hidden; direction: ltr; }
+:lang(he), .he {
+	.txt {
+		direction: rtl;
+	}
+}
 .main-section:focus { outline: none; }
 .top { background: linear-gradient(135deg, #a540e0, #ff0080, #ff8c00, #40e0d0, #40b1e0); background-size: 600% 600%; animation: bgGradientAnimate 30s ease-in-out infinite; }
 .h1 { 
@@ -150,6 +155,14 @@ a { text-decoration: none; color: #fff; }
 		.lightsun { animation-delay: 8s; }
 	}
 }
+:lang(he), .he {
+	#day1 {
+		&.in-view {
+			.creation-title.light { animation-name: appearLightHe; }
+			.creation-title.darkness { animation-name: appearDarkHe; }
+		}
+	}
+}
 /* END DAY 1 */
 
 /* DAY 2 */
@@ -225,6 +238,9 @@ a { text-decoration: none; color: #fff; }
 		@media (min-width: 992px) {
 			.creation-title { font-size: 30rem; }
 		}
+		&.in-view {
+			.creation-title { animation-name: appearDay2TitleHe; }
+		}
 	}
 }
 /* END DAY 2 */
@@ -280,6 +296,13 @@ a { text-decoration: none; color: #fff; }
 		}
 		@media (min-width: 992px) {
 			.creation-title { font-size: 30rem; }
+		}
+	}
+}
+:lang(he), .he {
+	#day3 {
+		&.in-view {
+			.creation-title { animation-name: appearDay3TitleHe; }
 		}
 	}
 }
@@ -349,7 +372,7 @@ a { text-decoration: none; color: #fff; }
 			.creation-title { font-size: 5rem; }
 		}
 		&.in-view {
-			.creation-title { animation-name: appearDay4TitleTight; }
+			.creation-title { animation-name: appearDay4Title; }
 		}
 	}
 }
@@ -363,7 +386,12 @@ a { text-decoration: none; color: #fff; }
 			.creation-title { font-size: 13rem; }
 		}
 		&.in-view {
-			.creation-title { animation-name: appearDay4TitleTight; }
+			.creation-title { animation-name: appearDay4TitleHe; }
+		}
+	}
+	#day4 {
+		&.in-view {
+			.creation-title { animation-name: appearDay4TitleHe; }
 		}
 	}
 }
@@ -447,13 +475,13 @@ a { text-decoration: none; color: #fff; }
 			.creation-title { font-size: 7rem; }
 		}
 		&.in-view {
-			.creation-title { animation-name: appearDay5TitleTight; }
+			.creation-title { animation-name: appearDay5Title; }
 		}
 	}
 }
 :lang(he), .he {
 	#day5 {
-		.creation-title { font-size: 5rem; animation-name: appearDay5TitleTight; }
+		.creation-title { font-size: 5rem; }
 		@media (min-width: 321px) {
 			.creation-title { font-size: 6rem; }
 		}
@@ -461,7 +489,7 @@ a { text-decoration: none; color: #fff; }
 			.creation-title { font-size: 10rem; }
 		}
 		&.in-view {
-			.creation-title { animation-name: appearDay5TitleTight; }
+			.creation-title { animation-name: appearDay5TitleHe; }
 		}
 	}
 }
@@ -531,6 +559,9 @@ a { text-decoration: none; color: #fff; }
 		}
 		@media (min-width: 640px) {
 			.creation-title { font-size: 10rem; }
+		}
+		&.in-view {
+			.creation-title { animation-name: appearDay6TitleHe; }
 		}
 	}
 }
@@ -630,9 +661,19 @@ a { text-decoration: none; color: #fff; }
 	100% { opacity: 1; letter-spacing: 10px; padding-left: 5px; }
 }
 
+@keyframes appearLightHe {
+	0%   { opacity: 0; letter-spacing: normal; }
+	100% { opacity: 1; letter-spacing: 3px; padding-left: 3px; }
+}
+
 @keyframes appearDark {
 	0%   { opacity: 0; letter-spacing: normal; }
 	100% { opacity: 0.8; letter-spacing: 10px; padding-left: 5px; }
+}
+
+@keyframes appearDarkHe {
+	0%   { opacity: 0; letter-spacing: normal; }
+	100% { opacity: 0.8; letter-spacing: 3px; padding-left: 3px; }
 }
 
 @keyframes appearSunLight {
@@ -658,6 +699,10 @@ a { text-decoration: none; color: #fff; }
 @keyframes appearDay2Title {
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.8; letter-spacing: 30px; padding-left: 15px; filter: blur(0px); }
+}
+@keyframes appearDay2TitleHe {
+	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
+	100% { opacity: 0.8; letter-spacing: 10px; padding-left: 10px; filter: blur(0px); }
 }
 @keyframes journey {
 	0%   { opacity: 0; transform: translateX(-100%); }
@@ -686,6 +731,10 @@ a { text-decoration: none; color: #fff; }
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.5; letter-spacing: 30px; padding-left: 30px; filter: blur(0px); }
 }
+@keyframes appearDay3TitleHe {
+	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
+	100% { opacity: 0.5; letter-spacing: 10px; padding-left: 10px; filter: blur(0px); }
+}
 @keyframes earth {
 	0%   { transform: rotate(90deg) scale(0); opacity: 0; filter: blur(200px); }
 	100% { transform: rotate(0) scale(1); opacity: 1; filter: blur(0px); }
@@ -697,7 +746,7 @@ a { text-decoration: none; color: #fff; }
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.5; letter-spacing: 30px; padding-left: 15px; filter: blur(0px); }
 }
-@keyframes appearDay4TitleTight {
+@keyframes appearDay4TitleHe {
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.5; letter-spacing: 10px; padding-left: 5px; filter: blur(0px); }
 }
@@ -725,7 +774,7 @@ a { text-decoration: none; color: #fff; }
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.5; letter-spacing: 30px; padding-left: 15px; filter: blur(0px); }
 }
-@keyframes appearDay5TitleTight {
+@keyframes appearDay5TitleHe {
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.5; letter-spacing: 10px; padding-left: 5px; filter: blur(0px); }
 }
@@ -741,6 +790,10 @@ a { text-decoration: none; color: #fff; }
 @keyframes appearDay6Title {
 	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
 	100% { opacity: 0.5; letter-spacing: 20px; padding-left: 10px; filter: blur(0px); }
+}
+@keyframes appearDay6TitleHe {
+	0%   { opacity: 0; letter-spacing: normal; filter: blur(70px); }
+	100% { opacity: 0.5; letter-spacing: 10px; padding-left: 10px; filter: blur(0px); }
 }
 @keyframes journeyDog {
 	0%   { transform: translateX(-100%) rotate(-5deg) scaleX(-1); opacity: 0; }
