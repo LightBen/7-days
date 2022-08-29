@@ -1,8 +1,7 @@
 <template>
 <div>
-<LanguagePicker></LanguagePicker>
-  <div id="app" :lang="lang" :dir="$t('dir')">
-   
+  <LanguagePicker></LanguagePicker>
+  <div id="app" :lang="$t('lang')" :dir="$t('dir')">
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -10,37 +9,34 @@
     <router-view />
   </div>
 </div>
- 
 </template>
 
 <script>
- import LanguagePicker from '@/components/widgets/LanguagePicker.vue'
-
+import LanguagePicker from '@/components/widgets/LanguagePicker.vue'
 
 export default {
   name: "app",
-    components: {
-        LanguagePicker
-     },
+  components: {
+      LanguagePicker
+  },
   data() {
     return {
       lang: "he"
     };
   },
-methods: {
-foo: function() {
- }
-},
+  methods: {
+    foo: function() {
+    }
+  },
+  beforeMount: function() {
 
-beforeMount: function(){
-
-},
-created:function() {
+  },
+  created:function() {
+    
+  },
+  mounted: function() {
   
-},
- mounted: function() {
- 
- },
+  },
 };
 </script>
 

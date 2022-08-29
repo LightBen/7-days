@@ -6,7 +6,7 @@
       <a href></a>
       <h1 class="h1 txt">{{$t('AppName')}}</h1>
       <div class="controls">
-        <a class="next" :href="`#day1`" title="Jump to Day 1">
+        <a class="next" :href="`#day1`" :title="$t('Jump_1')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -840,10 +840,10 @@
       </div>
       <div class="darksun"></div>
       <div class="controls">
-        <a class="prev" href="#top" title="Back to Main screen">
+        <a class="prev" href="#top" :title="$t('Back_Main')">
           <i></i>
         </a>
-        <a class="next" href="#day2" title="Jump to Day 2">
+        <a class="next" href="#day2" :title="$t('Jump_2')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -863,10 +863,10 @@
         <use xlink:href="#cloud" href="#cloud" />
       </svg>
       <div class="controls">
-        <a class="prev" href="#day1" title="Back to Day 1">
+        <a class="prev" href="#day1" :title="$t('Back_1')">
           <i></i>
         </a>
-        <a class="next" href="#day3" title="Jump to Day 3">
+        <a class="next" href="#day3" :title="$t('Jump_3')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -882,10 +882,10 @@
         </svg>
       </div>
       <div class="controls">
-        <a class="prev" href="#day2" title="Back to Day 2">
+        <a class="prev" href="#day2" :title="$t('Back_2')">
           <i></i>
         </a>
-        <a class="next" href="#day4" title="Jump to Day 4">
+        <a class="next" href="#day4" :title="$t('Jump_4')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -905,10 +905,10 @@
         <use xlink:href="#moon" href="#moon" />
       </svg>
       <div class="controls">
-        <a class="prev" href="#day3" title="Back to Day 3">
+        <a class="prev" href="#day3" :title="$t('Back_3')">
           <i></i>
         </a>
-        <a class="next" href="#day5" title="Jump to Day 5">
+        <a class="next" href="#day5" :title="$t('Jump_5')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -938,10 +938,10 @@
         <use xlink:href="#shark" href="#shark" />
       </svg>
       <div class="controls">
-        <a class="prev" href="#day4" title="Back to Day 4">
+        <a class="prev" href="#day4" :title="$t('Back_4')">
           <i></i>
         </a>
-        <a class="next" href="#day6" title="Jump to Day 6">
+        <a class="next" href="#day6" :title="$t('Jump_6')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -965,10 +965,10 @@
         <use xlink:href="#couple" href="#couple" />
       </svg>
       <div class="controls">
-        <a class="prev" href="#day5" title="Back to Day 5">
+        <a class="prev" href="#day5" :title="$t('Back_5')">
           <i></i>
         </a>
-        <a class="next" href="#dayShabat" title="Jump to Day 7">
+        <a class="next" href="#dayShabat" :title="$t('Jump_7')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -984,10 +984,10 @@
         <use xlink:href="#candles" href="#candles" />
       </svg>
       <div class="controls">
-        <a class="prev" href="#day6" title="Back to Day 6">
+        <a class="prev" href="#day6" :title="$t('Back_6')">
           <i></i>
         </a>
-        <a class="next" href="#bottom" title="Jump to Bottom">
+        <a class="next" href="#bottom" :title="$t('Jump_Bottom')">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>
@@ -997,10 +997,10 @@
     <section class="main-section bottom check-elem-in check-elem-out" id="bottom">
       <div class="h1 txt">{{$t('AppName')}}</div>
       <div class="controls">
-        <a class="prev" href="#dayShabat" title="Back to Day 7">
+        <a class="prev" href="#dayShabat" :title="$t('Back_7')">
           <i></i>
         </a>
-        <a class="next" href="#top" title="Back to the top" id="backToBeginning">
+        <a class="next" href="#top" :title="$t('Back_Main')" id="backToBeginning">
           <svg class="ico ico-click">
             <use xlink:href="#ico-click" href="#ico-click" />
           </svg>

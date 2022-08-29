@@ -20,5 +20,23 @@
     "Day_4":"Jour 4",
     "Day_5":"Jour 5",
     "Day_6":"Jour 6",
-    "Day_7":"Chabbath"
+    "Day_7":"Chabbath",
+
+    "Jump_1": "Avancer au Jour 1",
+    "Jump_2": "Avancer au Jour 2",
+    "Jump_3": "Avancer au Jour 3",
+    "Jump_4": "Avancer au Jour 4",
+    "Jump_5": "Avancer au Jour 5",
+    "Jump_6": "Avancer au Jour 6",
+    "Jump_7": "Avancer au Chabbath",
+    "Jump_Bottom": "Avancer à la fin",
+
+    "Back_1": "Revenir au Jour 1",
+    "Back_2": "Revenir au Jour 2",
+    "Back_3": "Revenir au Jour 3",
+    "Back_4": "Revenir au Jour 4",
+    "Back_5": "Revenir au Jour 5",
+    "Back_6": "Revenir au Jour 6",
+    "Back_7": "Revenir au Jour 7",
+    "Back_Main": "Revenir au début"
 }
